@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <linux/input.h>
 #include <sys/stat.h>
+#include <stdlib.h>
 
 #define LOGFILE "/tmp/data"
 

